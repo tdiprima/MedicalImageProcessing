@@ -3,12 +3,9 @@ package com.tdiprima.medicalimageprocessing;
 import loci.formats.ImageReader;
 import loci.formats.MetadataTools;
 import loci.formats.meta.IMetadata;
-
 import java.io.File;
-import javax.imageio.ImageReader;
 
 public class BioFormatsDemo {
-
     public static void main(String[] args) {
         File bioImageFile = new File("src/main/resources/test_image_bioformats.ome.tiff");
         IMetadata metadata = MetadataTools.createOMEXMLMetadata();
