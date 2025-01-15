@@ -11,6 +11,7 @@
         <exec.mainClass>com.tdiprima.medicalimageprocessing.TesseractDemo</exec.mainClass>
         <dcm4che.ver>5.33.0</dcm4che.ver>
     </properties>
+
     <repositories>
         <repository>
             <id>dcm4che</id>
@@ -27,6 +28,7 @@
             <url>https://maven.scijava.org/content/groups/public</url>
         </repository>
     </repositories>
+
     <dependencies>
         <!-- Tess4J for OCR -->
         <dependency>
@@ -107,21 +109,37 @@
             <version>${dcm4che.ver}</version>
         </dependency>
     </dependencies>
+
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>3.3.0</version>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>3.6.0</version>
                 <configuration>
                     <archive>
                         <manifest>
                             <mainClass>com.tdiprima.medicalimageprocessing.TesseractDemo</mainClass>
+                            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                         </manifest>
+                        <manifestEntries>
+                            <java.awt.headless>true</java.awt.headless>
+                        </manifestEntries>
                     </archive>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
                 </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
-    </project>
 </project>
