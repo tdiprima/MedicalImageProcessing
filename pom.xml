@@ -122,9 +122,6 @@
                             <mainClass>com.tdiprima.medicalimageprocessing.TesseractDemo</mainClass>
                             <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                         </manifest>
-                        <manifestEntries>
-                            <java.awt.headless>true</java.awt.headless>
-                        </manifestEntries>
                     </archive>
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
