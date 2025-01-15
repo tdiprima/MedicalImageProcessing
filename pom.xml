@@ -8,7 +8,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>21</maven.compiler.release>
-        <exec.mainClass>com.tdiprima.medicalimageprocessing.TesseractDemo</exec.mainClass>
+        <exec.mainClass>com.tdiprima.medicalimageprocessing.DCM4CHE_Demo</exec.mainClass>
         <dcm4che.ver>5.33.0</dcm4che.ver>
     </properties>
 

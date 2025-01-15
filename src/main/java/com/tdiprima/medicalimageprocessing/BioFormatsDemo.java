@@ -23,6 +23,9 @@ public class BioFormatsDemo {
             System.out.println("Image Count: " + reader.getImageCount());
             System.out.println("Image Dimensions: " + reader.getSizeX() + "x" + reader.getSizeY());
             System.out.println("Pixel Type: " + reader.getPixelType());
+            System.out.println("Format: " + reader.getFormat());
+            System.out.println("Core Metadata: " + reader.getCoreMetadataList());
+            System.out.println("Global Metadata: " + reader.getGlobalMetadata());
 
             // You can iterate over more metadata using reader and metadata APIs
         } catch (Exception e) {
