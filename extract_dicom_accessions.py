@@ -2,6 +2,8 @@
 Read a directory of DICOM files, extract the "Accession Number" (tag "0008,0050"),
 and write it to a text file called accession_list.txt
 """
+__author__ = 'tdiprima'
+
 import os
 
 import pydicom
@@ -26,5 +28,6 @@ def extract_accession_numbers(dicom_dir, output_file):
                     print(f"Error reading {file_path}: {e}")
 
 
-# Example usage
-extract_accession_numbers("path/to/dicom/directory", "accession_list.txt")
+home_directory = os.path.expanduser("~")
+full_path = os.path.join(home_directory, "github", "input")
+extract_accession_numbers(full_path, "accession_list.txt")
