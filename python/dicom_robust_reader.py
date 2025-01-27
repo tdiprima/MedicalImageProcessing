@@ -1,6 +1,5 @@
 """
-For reading DICOM files effectively, I recommend using the `pydicom` library.
-Here's a robust approach to handle potential silent failures:
+Reads and validates DICOM files using Python, ensuring the file format is correct and handling errors robustly.
 """
 import logging
 

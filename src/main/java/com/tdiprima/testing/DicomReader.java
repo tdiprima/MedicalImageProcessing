@@ -6,8 +6,8 @@ import java.io.File;
 import java.io.IOException;
 
 /**
- * For Java DICOM file reading, I recommend using the dcm4che library.
- * Here's a robust approach to prevent silent failures.
+ * Reads DICOM files using the dcm4che3 library for detailed and 
+ * reliable metadata parsing.
  * 
  * @author tdiprima
  */

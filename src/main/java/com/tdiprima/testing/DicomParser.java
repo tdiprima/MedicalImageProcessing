@@ -9,7 +9,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Basic implementation for DICOM tag and VR parsing
+ * Parses DICOM files to read and validate tags, value representations (VR), 
+ * and metadata structures.
  * 
  * @author tdiprima
  */

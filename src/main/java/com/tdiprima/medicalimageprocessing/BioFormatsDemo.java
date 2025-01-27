@@ -4,6 +4,11 @@ import loci.formats.ImageReader;
 import loci.formats.MetadataTools;
 import loci.formats.meta.IMetadata;
 
+/**
+ * Analyze bio-imaging formats such as OME-TIFF.
+ * 
+ * @author tdiprima
+ */
 public class BioFormatsDemo {
     public static void main(String[] args) {
         String filePath = "src/main/resources/test_image_bioformats.ome.tiff";

@@ -12,8 +12,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * For production-grade DICOM parsing, I recommend using dcm4che3 - the 
- * industry-standard Java library for robust DICOM handling.
+ * Implements a production-ready approach to parse and log detailed DICOM metadata 
+ * using the dcm4che3 library.
  * 
  * @author tdiprima
  */

@@ -5,6 +5,11 @@ import org.dcm4che3.io.DicomInputStream;
 import java.io.File;
 import java.io.IOException;
 
+/**
+ * Read and process DICOM medical image files.
+ * 
+ * @author tdiprima
+ */
 public class DCM4CHE_Demo {
 
     public static void main(String[] args) throws Exception {

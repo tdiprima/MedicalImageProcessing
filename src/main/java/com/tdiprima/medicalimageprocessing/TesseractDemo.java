@@ -4,6 +4,11 @@ import net.sourceforge.tess4j.Tesseract;
 import net.sourceforge.tess4j.TesseractException;
 import java.io.File;
 
+/**
+ * Extract text from an image file.
+ * 
+ * @author tdiprima
+ */
 public class TesseractDemo {
     public static void main(String[] args) {
         Tesseract tesseract = new Tesseract();

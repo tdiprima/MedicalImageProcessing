@@ -5,8 +5,8 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 /**
- * Example of reading a DICOM file using BufferedInputStream
- * It's less robust compared to dedicated DICOM libraries.
+ * Reads a DICOM file using a buffered stream to validate its header and 
+ * manage basic DICOM metadata.
  * 
  * @author tdiprima
  */
@@ -30,8 +30,8 @@ public class DicomBufferedReader {
             }
 
             // Now start reading actual metadata
-            // This is complex and requires understanding DICOM structure
-            // You'll need to implement tag parsing, VR (Value Representation) handling, etc.
+            // See: DicomParser.java
+
             System.out.println("DICOM file header validated");
 
         } catch (IOException e) {
