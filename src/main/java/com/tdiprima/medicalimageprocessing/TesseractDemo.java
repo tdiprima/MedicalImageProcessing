@@ -6,6 +6,7 @@ import java.io.File;
 
 /**
  * Extract text from an image file.
+ * Comment out "ome" in pom.xml and move BioFormatsDemo.java
  * 
  * @author tdiprima
  */
