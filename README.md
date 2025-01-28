@@ -6,7 +6,12 @@ This Java Maven project demonstrates three essential techniques for working with
 - **DCM4CHE** - Read and process DICOM medical image files.
 - **Bio-Formats** - Analyze bio-imaging formats such as OME-TIFF.
 
-### Etc.
+## Getting started 🚀
+
+```sh
+mvn clean install
+java -jar target/MedicalImageProcessing-1.0-jar-with-dependencies.jar
+```
 
 ## Prerequisites
 - Java 8+ installed.
