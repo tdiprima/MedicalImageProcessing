@@ -13,6 +13,8 @@ mvn clean install
 java -jar target/MedicalImageProcessing-1.0-jar-with-dependencies.jar
 ```
 
+**Note:** If the operating system throws a segmentation fault during execution, it means you didn't set your `TESSDATA_DIR` correctly.
+
 ## Prerequisites
 - Java 8+ installed.
 - Maven installed.
