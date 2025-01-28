@@ -21,9 +21,11 @@ import java.io.IOException;
  * @author tdiprima
  */
 public class DicomTextExtractor {
+    public static final String TESSDATA_DIR = "/usr/local/Cellar/tesseract/5.5.0/share/tessdata"; // macOS
+//    public static final String TESSDATA_DIR = "/usr/share/tesseract-ocr/5/tessdata"; // Ubuntu
 
     public static void main(String[] args) {
-        String dicomFilePath = "src/main/resources/test_image.dcm"; // Replace with your DICOM file path
+        String dicomFilePath = "src/main/resources/test_image.dcm";
 
         try {
             // Check if the DICOM file contains an image
@@ -131,7 +133,7 @@ public class DicomTextExtractor {
     private static String performOCR(BufferedImage image) {
         // Configure Tesseract instance
         Tesseract tesseract = new Tesseract();
-        tesseract.setDatapath("/usr/local/Cellar/tesseract/5.5.0/share/tessdata"); // Set the tessdata folder path
+        tesseract.setDatapath(TESSDATA_DIR); // Set the tessdata folder path
         tesseract.setLanguage("eng"); // Set the language for OCR
 
         try {
